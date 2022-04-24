@@ -118,69 +118,69 @@ def main():
             account = input().lower()
             print("Your Account username")
             name = input()
-#             while True:
-#                 print(" TP - To type your own pasword if you already have an account:\n GP - To outo generate random Password")
-#                 password_Choice = input().lower().strip()
-#                 if password_Choice == 'tp':
-#                     password = input("Enter Your Own Password\n")
-#                     break
-#                 elif password_Choice == 'gp':
-#                     password = generate_Password()
-#                     break
-#                 else:
-#                     print("Invalid password please try again")
-#             save_credentials(create_new_credential(account,name,password))
-#             print('\n')
-#             print(f"Account Credential for: {account} - UserName: {name} - Password:{password} created succesfully")
-#             print('\n')
-#         elif short_code == 'displdisplayay':
-#             if display_accounts_details():
-#                 print("This are all your Accounts: ")
+            while True:
+                print(" TP - To type your own pasword if you already have an account:\n GP - To outo generate random Password")
+                password_Choice = input().lower().strip()
+                if password_Choice == 'tp':
+                    password = input("Enter Your Own Password\n")
+                    break
+                elif password_Choice == 'gp':
+                    password = generate_Password()
+                    break
+                else:
+                    print("Invalid password please try again")
+            save_credentials(create_new_credential(account,name,password))
+            print('\n')
+            print(f"Account Credential for: {account} - UserName: {name} - Password:{password} created succesfully")
+            print('\n')
+        elif short_code == 'displdisplayay':
+            if display_accounts_details():
+                print("This are all your Accounts: ")
                  
-#                 print('*' * 30)
-#                 print('_'* 30)
-#                 for account in display_accounts_details():
-#                     print(f" Account:{account.account} \n User Name:{name}\n Password:{password}")
-#                     print('_'* 30)
-#                 print('*' * 30)
-#             else:
-#                 print("No credentials saved!. Use CREATE to Create a new credential")
-#         elif short_code == 'find':
-#             print("Enter the Account Name you want to search for")
-#             search_name = input().lower()
-#             if find_credential(search_name):
-#                 search_credential = find_credential(search_name)
-#                 print(f"Account Name : {search_credential.account}")
-#                 print('-' * 50)
-#                 print(f"User Name: {search_credential.name} Password :{search_credential.password}")
-#                 print('-' * 50)
-#             else:
-#                 print("The Credential does not exist")
-#                 print('\n')
-#         elif short_code == 'delete':
-#             print("Enter the account name of the Credentials you want to delete")
-#             search_name = input().lower()
-#             if find_credential(search_name):
-#                 search_credential = find_credential(search_name)
-#                 print("_"*50)
-#                 search_credential.delete_credentials()
-#                 print('\n')
-#                 print(f"The credentials: {search_credential.account}  has been successfully deleted!!!")
-#                 print('\n')
-#             else:
-#                 print("That Credential you want to delete does not exist")
-#         elif short_code == 'generate':
+                print('*' * 30)
+                print('_'* 30)
+                for account in display_accounts_details():
+                    print(f" Account:{account.account} \n User Name:{name}\n Password:{password}")
+                    print('_'* 30)
+                print('*' * 30)
+            else:
+                print("No credentials saved!. Use CREATE to Create a new credential")
+        elif short_code == 'find':
+            print("Enter the Account Name you want to search for")
+            search_name = input().lower()
+            if find_credential(search_name):
+                search_credential = find_credential(search_name)
+                print(f"Account Name : {search_credential.account}")
+                print('-' * 50)
+                print(f"User Name: {search_credential.name} Password :{search_credential.password}")
+                print('-' * 50)
+            else:
+                print("The Credential does not exist")
+                print('\n')
+        elif short_code == 'delete':
+            print("Enter the account name of the Credentials you want to delete")
+            search_name = input().lower()
+            if find_credential(search_name):
+                search_credential = find_credential(search_name)
+                print("_"*50)
+                search_credential.delete_credentials()
+                print('\n')
+                print(f"The credentials: {search_credential.account}  has been successfully deleted!!!")
+                print('\n')
+            else:
+                print("That Credential you want to delete does not exist")
+        elif short_code == 'generate':
 
-#             password = generate_Password()
-#             print(f" {password} Has been generated succesfull")
-#         elif short_code == 'exit':
-#             print("You Are About To Exit The APP!!!\n Thank you for using the App")
-#             break
-#         else:
-#             print("Wrong Code ... Check your Code to see if it matches the ones in the menu")
+            password = generate_Password()
+            print(f" {password} Has been generated succesfull")
+        elif short_code == 'exit':
+            print("You Are About To Exit The APP!!!\n Thank you for using the App")
+            break
+        else:
+            print("Wrong Code ... Check your Code to see if it matches the ones in the menu")
 
-#     else:
-#          print("Please enter a valid input to continue")
+    else:
+         print("Please enter a valid input to continue")
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
