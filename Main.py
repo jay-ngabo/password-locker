@@ -96,7 +96,7 @@ def main():
                     print("Please enter a valid password")
         save_user(create_new_user(name,password)) 
         print("*"*85)  
-        print(f"Hello {name}, Your account has was created succesfully! Your password is: {password}")
+        print(f"Hello {name}, account created succesfully! Your password is: {password}")
         print("*"*85) 
     elif short_code == "login":
         print("*"*50)
