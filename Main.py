@@ -100,7 +100,7 @@ def main():
         print("*"*85) 
     elif short_code == "login":
         print("*"*50)
-        print("Please enter you name and password")
+        print("Please enter your name and password")
         print("*"*50)
         name= input("name")
         password= input("password")
