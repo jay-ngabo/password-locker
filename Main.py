@@ -33,17 +33,17 @@ def create_new_credential(account,name,password):
     new_credentials= Credentials(account,name,password)
     return new_credentials
     
-# def save_credentials(credentials):
-#     """
-#     save credentials to the credentials list
-#     """
-#     credentials.save_datails()
+def save_credentials(credentials):
+    """
+    save credentials to the credentials list
+    """
+    credentials.save_datails()
 
-# def display_accounts_details():
-#     """
-#     show all the saved credential.
-#     """
-#     return Credentials.display_credentials()
+def display_accounts_details():
+    """
+    show all the saved credential.
+    """
+    return Credentials.display_credentials()
 
 # def delete_credential(credentials):
 #     """
