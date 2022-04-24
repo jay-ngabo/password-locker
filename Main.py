@@ -7,17 +7,17 @@ def create_new_user(name,password):
      new_user=User(name,password)
      return new_user
 
-# def save_user(user):
-#     """
-#     save new user function
-#     """
-#     user.save_user()
+def save_user(user):
+    """
+    save new user function
+    """
+    user.save_user()
 
-# def dispay_user():
-#     """
-#     display an existing user
-#     """ 
-#     return User.show_user()
+def dispay_user():
+    """
+    display an existing user
+    """ 
+    return User.show_user()
 
 # def login_user(name,password):
 #     """
