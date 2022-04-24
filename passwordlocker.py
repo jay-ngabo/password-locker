@@ -52,50 +52,50 @@ class Credentials:
         """
         Credentials.credentials_list.append(self)
 
-#     def delete_credentials(self):
-#          """
-#          delete the credentials method
-#          """
-#          Credentials.credentials_list.remove(self)
-#     @classmethod     
-#     def find_credential(cls,account):
-#       """
-#       method to find the credentials from the credential list
-#       """
-#       for credential in cls.credentials_list:
-#         if credential.account == account:
-#           return credential
-#     @classmethod
-#     def credential_exist(cls, account):
-#         """
-#         Method that checks if a credential exists from the credential list and returns true or false depending if the credential exists.
-#         """
-#         for credential in cls.credentials_list:
-#             if credential.account == account:
-#                 return True
-#         return False
-#     @classmethod
-#     def verfiy_user(clas,name,password):
-#       """
-#       verift user credentials 
-#       """     
-#       user_login=""
-#       for user in User.user_list:
-#         if (user.name==name and user.password==password):
-#           user_login == user.name
-#           return user_login
+    def delete_credentials(self):
+         """
+         delete the credentials method
+         """
+         Credentials.credentials_list.remove(self)
+    @classmethod     
+    def find_credential(cls,account):
+      """
+      method to find the credentials from the credential list
+      """
+      for credential in cls.credentials_list:
+        if credential.account == account:
+          return credential
+    @classmethod
+    def credential_exist(cls, account):
+        """
+        Method that checks if a credential exists from the credential list and returns true or false depending if the credential exists.
+        """
+        for credential in cls.credentials_list:
+            if credential.account == account:
+                return True
+        return False
+    @classmethod
+    def verfiy_user(clas,name,password):
+      """
+      verift user credentials 
+      """     
+      user_login=""
+      for user in User.user_list:
+        if (user.name==name and user.password==password):
+          user_login == user.name
+          return user_login
     
-#     @classmethod
-#     def display_credentials(cls):
-#       """
-#       method to shaw all saved credentials
-#       """
-#       return cls.credentials_list
+    @classmethod
+    def display_credentials(cls):
+      """
+      method to shaw all saved credentials
+      """
+      return cls.credentials_list
 
-#     @classmethod
-#     def copy_credentials(cls,account):
-#         my_credential= Credentials.find_credential(account)
-#         pyperclip.copy(my_credential.password)
+    @classmethod
+    def copy_credentials(cls,account):
+        my_credential= Credentials.find_credential(account)
+        pyperclip.copy(my_credential.password)
 
 
 #     def generatePassword(stringLength=8):
