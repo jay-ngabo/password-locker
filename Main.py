@@ -19,19 +19,19 @@ def dispay_user():
     """ 
     return User.show_user()
 
-# def login_user(name,password):
-#     """
-#     user login function
-#     """   
-#     check_user = Credentials.verfiy_user(name,password)
-#     return check_user
+def login_user(name,password):
+    """
+    user login function
+    """   
+    check_user = Credentials.verfiy_user(name,password)
+    return check_user
 
-# def create_new_credential(account,name,password):
-#     """
-#     create new credentials 
-#     """
-#     new_credentials= Credentials(account,name,password)
-#     return new_credentials
+def create_new_credential(account,name,password):
+    """
+    create new credentials 
+    """
+    new_credentials= Credentials(account,name,password)
+    return new_credentials
     
 # def save_credentials(credentials):
 #     """
