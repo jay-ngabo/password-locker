@@ -76,48 +76,48 @@ def copy_credentials(account):
     """
     return Credentials.copy_credentials(account)
 
-# def main():
-#     print("Hello Welcome to PassWord Locker...\n Use these short codes:\n ca-- To Create New Account.\n login---to log in to your account if you already have an account.\n ")
-#     short_code=input("").lower().strip()
-#     if short_code == 'ca':
-#         print("Sigh Up")
-#         print('*'* 40)
-#         name =input("User_name:")
-#         while True:
-#                 print(" Use\n  input --to input you password:\n GP--to auto generate a new password")
-#                 user_choice= input().lower().strip()
-#                 if user_choice =="input":
-#                     password= input("Enter Password\n")
-#                     break
-#                 elif user_choice == 'gp':
-#                     password=generate_Password()
-#                     break
-#                 else:
-#                     print("Please enter a valid password")
-#         save_user(create_new_user(name,password)) 
-#         print("*"*85)  
-#         print(f"Hello {name}, Your account has was created succesfully! Your password is: {password}")
-#         print("*"*85) 
-#     elif short_code == "login":
-#         print("*"*50)
-#         print("Please enter you name and password")
-#         print("*"*50)
-#         name= input("name")
-#         password= input("password")
-#         login=login_user(name,password)
-#         if login_user==login:
-#             print(f"Hello{name}. Welcome To Password Locker")
-#             print('\n')
-#     while True:
-#         print("Use these  codes:\n create -To Create a new credential \n display -To Display Credentials \n find - Find a credential \n generate - Generate A randomn password \n delete - Delete credential \n exit - Exit the application \n")
-#         short_code = input().lower()
-#         if short_code == "create":
-#             print("Create New Credential")
-#             print("."*20)
-#             print("Account name ....")
-#             account = input().lower()
-#             print("Your Account username")
-#             name = input()
+def main():
+    print("Hello Welcome to PassWord Locker...\n Use these short codes:\n ca-- To Create New Account.\n login---to log in to your account if you already have an account.\n ")
+    short_code=input("").lower().strip()
+    if short_code == 'ca':
+        print("Sigh Up")
+        print('*'* 40)
+        name =input("User_name:")
+        while True:
+                print(" Use\n  input --to input you password:\n GP--to auto generate a new password")
+                user_choice= input().lower().strip()
+                if user_choice =="input":
+                    password= input("Enter Password\n")
+                    break
+                elif user_choice == 'gp':
+                    password=generate_Password()
+                    break
+                else:
+                    print("Please enter a valid password")
+        save_user(create_new_user(name,password)) 
+        print("*"*85)  
+        print(f"Hello {name}, Your account has was created succesfully! Your password is: {password}")
+        print("*"*85) 
+    elif short_code == "login":
+        print("*"*50)
+        print("Please enter you name and password")
+        print("*"*50)
+        name= input("name")
+        password= input("password")
+        login=login_user(name,password)
+        if login_user==login:
+            print(f"Hello{name}. Welcome To Password Locker")
+            print('\n')
+    while True:
+        print("Use these  codes:\n create -To Create a new credential \n display -To Display Credentials \n find - Find a credential \n generate - Generate A randomn password \n delete - Delete credential \n exit - Exit the application \n")
+        short_code = input().lower()
+        if short_code == "create":
+            print("Create New Credential")
+            print("."*20)
+            print("Account name ....")
+            account = input().lower()
+            print("Your Account username")
+            name = input()
 #             while True:
 #                 print(" TP - To type your own pasword if you already have an account:\n GP - To outo generate random Password")
 #                 password_Choice = input().lower().strip()
