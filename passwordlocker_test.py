@@ -36,49 +36,49 @@ class TestUser(unittest.TestCase):
         """ 
         self.assertEqual(User.show_user(),User.user_list)
 
-#     def test_delete_user(self):
-#         """
-#         test to delete a user from User list
-#         """ 
-#         self.new_user.save_user()
+    def test_delete_user(self):
+        """
+        test to delete a user from User list
+        """ 
+        self.new_user.save_user()
         
         
-#         self.new_user.delete_user()
-#         self.assertEqual(len(User.user_list),0)
+        self.new_user.delete_user()
+        self.assertEqual(len(User.user_list),0)
 
-# class TestCredentials(unittest.TestCase):
-#     """
-#     a class to test and validate user  credentials
-#     """  
-#     def setUp(self):
-#         """
-#         a method before the other rest run
-#         """
-#         self.new_credential= Credentials('email','CalebKabaya','Mbuguack')
+class TestCredentials(unittest.TestCase):
+    """
+    a class to test and validate user  credentials
+    """  
+    def setUp(self):
+        """
+        a method before the other rest run
+        """
+        self.new_credential= Credentials('email','CalebKabaya','Mbuguack')
     
-#     def test_init_(self):
-#         """
-#         a test to initalize the new credential instance
-#         """
-#         self.assertEqual(self.new_credential.account,'email')
-#         self.assertEqual(self.new_credential.name,'CalebKabaya')
-#         self.assertEqual(self.new_credential.password,'Mbuguack')
+    def test_init_(self):
+        """
+        a test to initalize the new credential instance
+        """
+        self.assertEqual(self.new_credential.account,'email')
+        self.assertEqual(self.new_credential.name,'CalebKabaya')
+        self.assertEqual(self.new_credential.password,'Mbuguack')
     
-#     def test_save_credential(self):
-#         """
-#         test if the credatial are saved in the sredential list
-#         """
-#         self.new_credential.save_datails()
-#         self.assertEqual(len(Credentials.credentials_list),1)
+    def test_save_credential(self):
+        """
+        test if the credatial are saved in the sredential list
+        """
+        self.new_credential.save_datails()
+        self.assertEqual(len(Credentials.credentials_list),1)
 
-#     def test_save_many_accounts(self):
-#         """
-#         test to check if we can save multiple credentials to our credentials list
-#         """
-#         self.new_credential.save_datails()
-#         test_credential= Credentials("Spotify","calebm","121212")
-#         test_credential.save_datails()
-#         self.assertEqual(len(Credentials.credentials_list),2)
+    def test_save_many_accounts(self):
+        """
+        test to check if we can save multiple credentials to our credentials list
+        """
+        self.new_credential.save_datails()
+        test_credential= Credentials("Spotify","calebm","121212")
+        test_credential.save_datails()
+        self.assertEqual(len(Credentials.credentials_list),2)
 
 #     def test_delete_credential(self):
 #         """
