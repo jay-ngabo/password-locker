@@ -98,9 +98,9 @@ class Credentials:
         pyperclip.copy(my_credential.password)
 
 
-#     def generatePassword(stringLength=8):
-#         """
-#         Generate a random password for the user
-#         """
-#         password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
-#         return ''.join(random.choice(password) for i in range(stringLength))    
+    def generatePassword(stringLength=8):
+        """
+        Generate a random password for the user
+        """
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+        return ''.join(random.choice(password) for i in range(stringLength))    
