@@ -16,25 +16,25 @@ class TestUser(unittest.TestCase):
         self.new_user = User('CalebKabaya', 'Mbuguack')
 
     
-#     def test_init(self):
-#         '''
-#         test_init test case to test if the object is initialized properly
-#         '''
-#         self.assertEqual(self.new_user.name,'CalebKabaya')
-#         self.assertEqual(self.new_user.password,'Mbuguack')
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
+        self.assertEqual(self.new_user.name,'CalebKabaya')
+        self.assertEqual(self.new_user.password,'Mbuguack')
 
-#     def test_save_user(self):
-#         """
-#         test if a new user instance has been saved in the User list
-#         """  
-#         self.new_user.save_user() 
-#         self.assertEqual(len(User.user_list),1)
+    def test_save_user(self):
+        """
+        test if a new user instance has been saved in the User list
+        """  
+        self.new_user.save_user() 
+        self.assertEqual(len(User.user_list),1)
 
-#     def test_show_user(self):
-#         """
-#         test to show a user from User list
-#         """ 
-#         self.assertEqual(User.show_user(),User.user_list)
+    def test_show_user(self):
+        """
+        test to show a user from User list
+        """ 
+        self.assertEqual(User.show_user(),User.user_list)
 
 #     def test_delete_user(self):
 #         """
