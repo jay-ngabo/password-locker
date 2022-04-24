@@ -87,7 +87,7 @@ def main():
                 print(" Use\n  input --to input you password:\n GP--to auto generate a new password")
                 user_choice= input().lower().strip()
                 if user_choice =="input":
-                    password= input("Enter Password\n")
+                    password= input("input Password\n")
                     break
                 elif user_choice == 'gp':
                     password=generate_Password()
