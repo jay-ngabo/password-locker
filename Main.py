@@ -77,7 +77,7 @@ def copy_credentials(account):
     return Credentials.copy_credentials(account)
 
 def main():
-    print("Hello Welcome to PassWord Locker...\n Use these short codes:\n ca-- To Create New Account.\n login---to log in to your account if you already have an account.\n ")
+    print("PassWord Locker app...\n Use these short codes:\n ca-- To Create New Account.\n login---to log in to your account if you already have an account.\n ")
     short_code=input("").lower().strip()
     if short_code == 'ca':
         print("Sigh Up")
